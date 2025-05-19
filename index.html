@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="カフェの架空ランディングページ。HTML/CSSで制作されたレスポンシブ対応サイト。">
+  <title>架空カフェ「SUNLIGHT」</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Helvetica Neue', sans-serif; background-color: #fffdf7; color: #333; }
+    header {
+      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .menu-item {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .menu-item img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .cta a {
+      display: inline-block;
+      background-color: #cc6600;
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background-color: #b35900;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Coffee Stand SUNLIGHT</h1>
+      <p>あなたの一日を照らす、やさしい一杯を。</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>私たちの想い</h2>
+    <p>「SUNLIGHT」は、街角にひっそり佇むコーヒースタンド。地元の焙煎所と提携し、毎日丁寧に抽出されたスペシャリティコーヒーを提供しています。</p>
+  </section>
+
+  <section>
+    <h2>おすすめメニュー</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=60" alt="ラテ">
+        <h3>カフェラテ</h3>
+        <p>まろやかなミルクと香ばしいエスプレッソのバランスが絶妙。</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=60" alt="スコーン">
+        <h3>自家製スコーン</h3>
+        <p>外はサクッと、中はしっとり。日替わりフレーバーで提供。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>ご来店お待ちしています</h2>
+    <p>営業時間：8:00〜18:00（火曜定休）</p>
+    <a href="#">お問い合わせ</a>
+  </section>
+
+  <footer>
+    &copy; 2025 SUNLIGHT Coffee Stand
+  </footer>
+</body>
+</html>
